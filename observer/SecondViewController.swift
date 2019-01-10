@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SeccondViewController: UIViewController {
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,6 @@ class SeccondViewController: UIViewController {
         let color = notification.userInfo?["color"] as? UIColor ?? UIColor.blue
         
         view.backgroundColor = color
-        print(color)
     }
     
     deinit {

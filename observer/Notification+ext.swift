@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+extension Notification.Name {
+    
+    static let colorChanged = Notification.Name("changeColor")
+    
+}

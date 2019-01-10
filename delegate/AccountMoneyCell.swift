@@ -8,8 +8,22 @@
 
 import UIKit
 
+protocol AccountMoneyCellDelegate: class {
+    func sendButtonPressed(to name: String?, amount: Int)
+}
+
 class AccountMoneyCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var amountTextField: UITextField!
+    
+    public weak var delegate: AccountMoneyCellDelegate?
+    
+    @IBAction func sendButtonPressed() {
+        delegate?.sendButtonPressed(to: nameLabel.text, amount: Int(amountTextField.text!)!)
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

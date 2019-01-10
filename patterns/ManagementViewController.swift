@@ -19,7 +19,6 @@ class ManagementViewController: UIViewController {
 
         Account.shared.name = name
         Account.shared.money = moneyAmount
-        print(name)
     }
     
     

@@ -8,16 +8,24 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class Main2ViewController: UIViewController {
+    
+    
+    
     @IBAction func greenButtonPressed (_ sender: UIButton) {
-        
-        
+        NotificationCenter.default.post(name: Notification.Name.colorChanged,
+                                        object: nil,
+                                        userInfo: ["color" : UIColor.green])
+        view.backgroundColor = UIColor.green
     }
     
     @IBAction func redButtonPressed (_ sender: UIButton) {
-        
-        
+        NotificationCenter.default.post(name: Notification.Name.colorChanged,
+                                        object: nil,
+                                        userInfo: ["color" : UIColor.red])
+        view.backgroundColor = UIColor.red
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

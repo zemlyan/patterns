@@ -21,9 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
-	<string>standAlone</string>
+	<string>delegate</string>
 	<key>UIMainStoryboardFile</key>
-	<string>standAlone</string>
+	<string>delegate</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
